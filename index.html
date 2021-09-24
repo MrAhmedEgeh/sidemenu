@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="left">
+          <h1>Book<span>Shop</span></h1>
+        </div>
+        <div class="middle">
+          <ul class="ul-1">
+            <li>Home</li>
+            <li>Genres</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="right" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+            </svg>
+        </div>
+      
+        <div id="side-menu" class="side-menu">
+           <ul>
+             <li onclick="closeMenu()" class="close-btn">&times;</li>
+            <li>Home</li>
+            <li>Genres</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </nav>
+      <section>
+        <h2>Responsive Side Menu</h2>
+        <p> The side menu appears when the screen is 997px or less, so resize the window to see the side menu in action
+      </section>
+
+      <script src="script.js"></script>
+</body>
+</html>
